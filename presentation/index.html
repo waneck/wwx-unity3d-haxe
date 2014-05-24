@@ -72,7 +72,6 @@
 					<li>Asset store</li>
 					<li class="fragment"><span class="fragment">Because </span><h4 style="font-size: 1.5em;display: inline;" class="fragment">WE <span class="fragment">CAN</span></h4></li> 
 						<!-- you may need to use Unity in some project, and one of the biggest advantages of Haxe is being able to choose the best tool for the job -->
-						<!-- actually the best question would be: why wouldn't you? -->
 				</ul>
 					<aside class="notes">
 					</aside>
@@ -203,6 +202,12 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 					</section>
 				</section>
 				<section>
+					<h3>Error positions</h3>
+				</section>
+				<section>
+					<h3>Error positions</h3>
+				</section>
+				<section>
 					<section data-markdown>
 						### Equivalence
 						#### Types
@@ -221,11 +226,13 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 							EditorApplication.update += delegate() { Debug.Log("update"); };
 							void Update() {}
 							SomeComponent comp = GetComponent&lt;SomeComponent&gt;();
+							[UnityEngine.InitializeOnLoad] public class Something ...
 
 							//Haxe
 							EditorApplication.update += function() Debug.Log('update');
 							function Update() {}
 							var comp:SomeComponent = GetComponent(); //or var comp = (GetComponent() : SomeComponent)
+							@:meta(UnityEngine.InitializeOnLoad) class Something ...
 						</code></pre>
 					</section>
 				</section>
@@ -246,11 +253,24 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 					<h3>unihx features</h3>
 					<ul>
 						<li class="fragment">Automatic recompilation (using compilation server)</li>
+						<li class="fragment">Generate files in the folder relative to where they are</li>
 						<li class="fragment">Drag &amp; Drop support for Haxe classes</li>
 						<li class="fragment">Avoid the generated C# code warnings</li>
-						<li class="fragment"></li>
+						<li class="fragment">Mix pure C# code with Haxe and cross-reference between them</li>
+						<li class="fragment">Add Vector / Quaternion operator overloading</li>
 					</ul>
 				</section>
+				<!-- error positions -->
+				<section>
+					<h3>unihx features</h3>
+					<h4>Haxe API overrides</h4>
+					<ul>
+						<li class="fragment">trace() -&gt; Debug.Log</li>
+						<li class="fragment">haxe.Timer</li>
+						<li class="fragment">haxe.Http -&gt; UnityEngine.WWW (planned)</li>
+					</ul>
+				</section>
+				<!-- 
 				<!-- <section> -->
 				<!-- 	<section> -->
 				<!-- 		<h2>Vertical Slides</h2> -->
