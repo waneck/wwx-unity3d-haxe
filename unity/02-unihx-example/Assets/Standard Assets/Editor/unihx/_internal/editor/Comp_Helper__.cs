@@ -22,7 +22,7 @@ namespace unihx._internal.editor{
 		}
 		
 		
-		public static   void __hx_ctor_unihx__internal_editor_Comp_Helper__(global::unihx._internal.editor.Comp_Helper__ __temp_me36){
+		public static   void __hx_ctor_unihx__internal_editor_Comp_Helper__(global::unihx._internal.editor.Comp_Helper__ __temp_me37){
 			unchecked {
 				#line 585 "Z:\\var\\dev\\proj\\unihx\\unihx\\inspector\\Macro.hx"
 				{
@@ -122,7 +122,7 @@ namespace unihx._internal.editor{
 								default:
 								{
 									#line 508 "Z:\\var\\dev\\proj\\unihx\\unihx\\inspector\\Macro.hx"
-									object __temp_expr53 = default(object);
+									object __temp_expr58 = default(object);
 									#line 508 "Z:\\var\\dev\\proj\\unihx\\unihx\\inspector\\Macro.hx"
 									break;
 								}
@@ -132,7 +132,7 @@ namespace unihx._internal.editor{
 						}
 						 else {
 							#line 508 "Z:\\var\\dev\\proj\\unihx\\unihx\\inspector\\Macro.hx"
-							object __temp_expr52 = default(object);
+							object __temp_expr57 = default(object);
 						}
 						
 						#line 510 "Z:\\var\\dev\\proj\\unihx\\unihx\\inspector\\Macro.hx"

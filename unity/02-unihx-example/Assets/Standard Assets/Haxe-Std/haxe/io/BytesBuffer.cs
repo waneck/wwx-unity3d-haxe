@@ -22,10 +22,10 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_BytesBuffer(global::haxe.io.BytesBuffer __temp_me26){
+		public static   void __hx_ctor_haxe_io_BytesBuffer(global::haxe.io.BytesBuffer __temp_me27){
 			unchecked {
 				#line 56 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\BytesBuffer.hx"
-				__temp_me26.b = new global::System.IO.MemoryStream();
+				__temp_me27.b = new global::System.IO.MemoryStream();
 			}
 			#line default
 		}

@@ -22,17 +22,17 @@ namespace unihx._internal.editor{
 		}
 		
 		
-		public static   void __hx_ctor_unihx__internal_editor_HaxeCompiler(global::unihx._internal.editor.HaxeCompiler __temp_me39, global::unihx._internal.editor.Comp prop){
+		public static   void __hx_ctor_unihx__internal_editor_HaxeCompiler(global::unihx._internal.editor.HaxeCompiler __temp_me40, global::unihx._internal.editor.Comp prop){
 			unchecked {
 				#line 16 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-				__temp_me39.props = prop;
+				__temp_me40.props = prop;
 				switch (global::Type.enumIndex(prop)){
 					case 2:
 					{
 						#line 17 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						int port = ((int) (global::haxe.lang.Runtime.toInt(prop.@params[0])) );
 						#line 20 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						__temp_me39.newProcess(port);
+						__temp_me40.newProcess(port);
 						#line 19 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						break;
 					}
@@ -72,21 +72,21 @@ namespace unihx._internal.editor{
 					#line 114 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 					global::UnityEngine.Debug.LogException(((global::System.Exception) (new global::unihx._internal.editor.HaxeError(((string) (line) ), ((string) (fullp) ), lineno.@value)) ));
 				}
-				catch (global::System.Exception __temp_catchallException58){
+				catch (global::System.Exception __temp_catchallException63){
 					#line 114 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-					global::haxe.lang.Exceptions.exception = __temp_catchallException58;
+					global::haxe.lang.Exceptions.exception = __temp_catchallException63;
 					#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-					object __temp_catchall59 = __temp_catchallException58;
+					object __temp_catchall64 = __temp_catchallException63;
 					#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-					if (( __temp_catchall59 is global::haxe.lang.HaxeException )) {
+					if (( __temp_catchall64 is global::haxe.lang.HaxeException )) {
 						#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						__temp_catchall59 = ((global::haxe.lang.HaxeException) (__temp_catchallException58) ).obj;
+						__temp_catchall64 = ((global::haxe.lang.HaxeException) (__temp_catchallException63) ).obj;
 					}
 					
 					#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 					{
 						#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						object e = __temp_catchall59;
+						object e = __temp_catchall64;
 						#line 118 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						global::UnityEngine.Debug.LogError(((object) (line) ));
 					}
@@ -131,21 +131,21 @@ namespace unihx._internal.editor{
 						this.process.kill();
 						this.process.close();
 					}
-					catch (global::System.Exception __temp_catchallException54){
+					catch (global::System.Exception __temp_catchallException59){
 						#line 30 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						global::haxe.lang.Exceptions.exception = __temp_catchallException54;
+						global::haxe.lang.Exceptions.exception = __temp_catchallException59;
 						#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						object __temp_catchall55 = __temp_catchallException54;
+						object __temp_catchall60 = __temp_catchallException59;
 						#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						if (( __temp_catchall55 is global::haxe.lang.HaxeException )) {
+						if (( __temp_catchall60 is global::haxe.lang.HaxeException )) {
 							#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-							__temp_catchall55 = ((global::haxe.lang.HaxeException) (__temp_catchallException54) ).obj;
+							__temp_catchall60 = ((global::haxe.lang.HaxeException) (__temp_catchallException59) ).obj;
 						}
 						
 						#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						{
 							#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-							object e = __temp_catchall55;
+							object e = __temp_catchall60;
 							#line 34 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 							{
 							}
@@ -168,7 +168,7 @@ namespace unihx._internal.editor{
 		public virtual   bool compile(global::Array<object> args, global::haxe.lang.Null<bool> verbose){
 			unchecked {
 				#line 41 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-				bool __temp_verbose38 = ( ( ! (verbose.hasValue) ) ? (global::haxe.lang.Runtime.toBool(false)) : (verbose.@value) );
+				bool __temp_verbose39 = ( ( ! (verbose.hasValue) ) ? (global::haxe.lang.Runtime.toBool(false)) : (verbose.@value) );
 				global::sys.io.Process cmd = default(global::sys.io.Process);
 				#line 42 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 				{
@@ -237,7 +237,7 @@ namespace unihx._internal.editor{
 					
 					#line 68 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 					sw.Stop();
-					if (__temp_verbose38) {
+					if (__temp_verbose39) {
 						#line 70 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						global::UnityEngine.Debug.Log(((object) (global::haxe.lang.Runtime.concat(global::haxe.lang.Runtime.concat("Compilation ended (", global::Std.@string(sw.Elapsed)), ")")) ));
 					}
@@ -247,17 +247,17 @@ namespace unihx._internal.editor{
 						#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						int _g1 = 0;
 						#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						string __temp_stmt56 = default(string);
+						string __temp_stmt61 = default(string);
 						#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						{
 							#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 							string s = cmd.stdout.readAll(default(global::haxe.lang.Null<int>)).toString();
 							#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-							__temp_stmt56 = s.Trim();
+							__temp_stmt61 = s.Trim();
 						}
 						
 						#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						global::Array<object> _g11 = global::haxe.lang.StringExt.split(__temp_stmt56, "\n");
+						global::Array<object> _g11 = global::haxe.lang.StringExt.split(__temp_stmt61, "\n");
 						#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						while (( _g1 < _g11.length )){
 							#line 71 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
@@ -280,17 +280,17 @@ namespace unihx._internal.editor{
 						#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						int _g2 = 0;
 						#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						string __temp_stmt57 = default(string);
+						string __temp_stmt62 = default(string);
 						#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						{
 							#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 							string s1 = cmd.stderr.readAll(default(global::haxe.lang.Null<int>)).toString();
 							#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-							__temp_stmt57 = s1.Trim();
+							__temp_stmt62 = s1.Trim();
 						}
 						
 						#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
-						global::Array<object> _g12 = global::haxe.lang.StringExt.split(__temp_stmt57, "\n");
+						global::Array<object> _g12 = global::haxe.lang.StringExt.split(__temp_stmt62, "\n");
 						#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"
 						while (( _g2 < _g12.length )){
 							#line 77 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeCompiler.hx"

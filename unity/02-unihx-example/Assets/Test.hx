@@ -1,7 +1,28 @@
-class Test extends unityengine.MonoBehaviour
+import unityengine.*;
+import unihx.inspector.*;
+
+class Test extends HaxeBehaviour
 {
-	function Update()
-	{
-		throw "Error";
-	}
+	public var haxeEnum:WrappedValue;
+}
+
+enum WrappedValue
+{
+	/**
+		Null
+		@label null
+	**/
+	WNull;
+
+	/**
+		Int value
+		@label int
+	**/
+	WInt(value:Int);
+
+	/**
+		String Value
+		@label string
+	**/
+	WString(value:String);
 }

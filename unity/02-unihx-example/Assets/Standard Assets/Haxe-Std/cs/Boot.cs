@@ -22,7 +22,7 @@ namespace cs{
 		}
 		
 		
-		public static   void __hx_ctor_cs_Boot(global::cs.Boot __temp_me12){
+		public static   void __hx_ctor_cs_Boot(global::cs.Boot __temp_me13){
 			unchecked {
 				#line 35 "C:\\HaxeToolkit\\haxe\\std\\cs\\Boot.hx"
 				{

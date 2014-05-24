@@ -22,7 +22,7 @@ namespace cs{
 		}
 		
 		
-		public static   void __hx_ctor_cs_Lib(global::cs.Lib __temp_me13){
+		public static   void __hx_ctor_cs_Lib(global::cs.Lib __temp_me14){
 			unchecked {
 				#line 29 "C:\\HaxeToolkit\\haxe\\std\\cs\\Lib.hx"
 				{

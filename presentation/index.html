@@ -68,6 +68,7 @@
 				<ul>
 					<li>Most popular tool for 3D games</li>
 					<li>Multiple targets: web-based using a plugin</li>
+					<li>Awesome editor</li>
 					<li>Flash "refugees"</li>
 					<li>Don't fight, assimilate</li>
 					<li>Asset store</li>
@@ -150,6 +151,7 @@
 								public var stringProp:String;
 								public var arrayProp:NativeArray&lt;Int&gt;;
 								public var vectorProp:Vector3;
+								@:protected var protectedVar:Int;
 
 								function Update()
 								{
@@ -166,8 +168,7 @@
 					<section>
 					<h3>Generated code</h3>
 
-						<pre><code class="cs haxe hljs php">
-import cs.NativeArray;
+						<pre><code class="cs haxe hljs php">import cs.NativeArray;
 import unityengine.*;
 
 @:nativeGen class ExampleScript extends unityengine.MonoBehaviour
@@ -175,6 +176,7 @@ import unityengine.*;
 	public var stringProp:String;
 	public var arrayProp:NativeArray&lt;Int&gt;;
 	public var vectorProp:Vector3;
+	@:protected var protectedVar:Int;
 
 	function Update()
 	{
@@ -185,8 +187,7 @@ import unityengine.*;
 					</section>
 					<section>
 						<h3>Generated code</h3>
-						<pre><code class="cs haxe hljs php">
-#pragma warning disable 109, 114, 219, 429, 168, 162
+						<pre><code class="cs haxe hljs php">#pragma warning disable 109, 114, 219, 429, 168, 162
 public class ExampleScript : global::UnityEngine.MonoBehaviour {
 	public ExampleScript() : base() {
 	}
@@ -194,6 +195,7 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 	public string stringProp;
 	public int[] arrayProp;
 	public global::UnityEngine.Vector3 vectorProp;
+	protected int protectedVar;
 	public virtual void Update() {
 		global::UnityEngine.Debug.Log(((object) ("It\'s working!") ));
 	}
@@ -277,9 +279,46 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 					</ul>
 				</section>
 				<section>
+					<h2 style="display:none">HaxeBehaviour</h2>
 					<img src="extras/haxebehaviour.jpg" alt="HaxeBehaviour" />
+					<div data-markdown>
+					Danger: Proof-of-concept. User discretion is advised
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3>HaxeBehaviour macros</h3>
+						<p>1. Comments show up in inspector</p>
+						<img src="extras/tooltip.png" />
+					</section>
+
+					<section>
+						<p>2. Extra properties through comment tags</p>
+						<img src="extras/custom-props.png" />
+					</section>
+
+					<section>
+						<p>3. Custom controls</p>
+						<img src="extras/custom-controls-1.png" />
+					</section>
+
+					<section>
+						<p>4. Editor-time control events</p>
+						<img src="extras/custom-controls-2.png" />
+					</section>
+
+					<section>
+						<p>5. Haxe types support</p>
+						<img src="extras/enums-1.png" style="float:left" />
+						<img src="extras/enums-2.png" />
+						<img src="extras/enums-3.png" />
+						<img src="extras/enums-4.png" />
+					</section>
 				</section>
 
+				<section>
+					<h2>Call for collaboration!</h2>
+				</section>
 
 				<section>
 					<img src="extras/questions.png" />

@@ -18,10 +18,10 @@ namespace sys.io{
 		}
 		
 		
-		public static   void __hx_ctor_sys_io_FileInput(global::sys.io.FileInput __temp_me33, global::System.IO.FileStream stream){
+		public static   void __hx_ctor_sys_io_FileInput(global::sys.io.FileInput __temp_me34, global::System.IO.FileStream stream){
 			unchecked {
 				#line 27 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\FileInput.hx"
-				global::cs.io.NativeInput.__hx_ctor_cs_io_NativeInput(__temp_me33, stream);
+				global::cs.io.NativeInput.__hx_ctor_cs_io_NativeInput(__temp_me34, stream);
 			}
 			#line default
 		}

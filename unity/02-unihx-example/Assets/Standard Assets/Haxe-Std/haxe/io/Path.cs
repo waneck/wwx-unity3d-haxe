@@ -22,15 +22,15 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_Path(global::haxe.io.Path __temp_me28, string path){
+		public static   void __hx_ctor_haxe_io_Path(global::haxe.io.Path __temp_me29, string path){
 			unchecked {
 				#line 77 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
 				switch (path){
 					case ".":case "..":
 					{
 						#line 79 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-						__temp_me28.dir = path;
-						__temp_me28.file = "";
+						__temp_me29.dir = path;
+						__temp_me29.file = "";
 						return ;
 					}
 					
@@ -42,20 +42,20 @@ namespace haxe.io{
 				int c2 = global::haxe.lang.StringExt.lastIndexOf(path, "\\", default(global::haxe.lang.Null<int>));
 				if (( c1 < c2 )) {
 					#line 86 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-					__temp_me28.dir = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(c2, true));
+					__temp_me29.dir = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(c2, true));
 					path = global::haxe.lang.StringExt.substr(path, ( c2 + 1 ), default(global::haxe.lang.Null<int>));
-					__temp_me28.backslash = true;
+					__temp_me29.backslash = true;
 				}
 				 else {
 					#line 89 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
 					if (( c2 < c1 )) {
 						#line 90 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-						__temp_me28.dir = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(c1, true));
+						__temp_me29.dir = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(c1, true));
 						path = global::haxe.lang.StringExt.substr(path, ( c1 + 1 ), default(global::haxe.lang.Null<int>));
 					}
 					 else {
 						#line 93 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-						__temp_me28.dir = default(string);
+						__temp_me29.dir = default(string);
 					}
 					
 				}
@@ -64,13 +64,13 @@ namespace haxe.io{
 				int cp = global::haxe.lang.StringExt.lastIndexOf(path, ".", default(global::haxe.lang.Null<int>));
 				if (( cp != -1 )) {
 					#line 96 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-					__temp_me28.ext = global::haxe.lang.StringExt.substr(path, ( cp + 1 ), default(global::haxe.lang.Null<int>));
-					__temp_me28.file = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(cp, true));
+					__temp_me29.ext = global::haxe.lang.StringExt.substr(path, ( cp + 1 ), default(global::haxe.lang.Null<int>));
+					__temp_me29.file = global::haxe.lang.StringExt.substr(path, 0, new global::haxe.lang.Null<int>(cp, true));
 				}
 				 else {
 					#line 99 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Path.hx"
-					__temp_me28.ext = default(string);
-					__temp_me28.file = path;
+					__temp_me29.ext = default(string);
+					__temp_me29.file = path;
 				}
 				
 			}

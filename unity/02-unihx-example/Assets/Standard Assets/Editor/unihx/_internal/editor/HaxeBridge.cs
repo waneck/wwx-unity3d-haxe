@@ -33,7 +33,7 @@ namespace unihx._internal.editor{
 		}
 		
 		
-		public static   void __hx_ctor_unihx__internal_editor_HaxeBridge(global::unihx._internal.editor.HaxeBridge __temp_me37){
+		public static   void __hx_ctor_unihx__internal_editor_HaxeBridge(global::unihx._internal.editor.HaxeBridge __temp_me38){
 			unchecked {
 				#line 4 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeBridge.hx"
 				{

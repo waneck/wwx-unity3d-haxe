@@ -875,7 +875,7 @@ namespace unihx._internal.editor{
 		}
 		
 		
-		public static   void __hx_ctor_unihx__internal_editor_HaxePropertiesData(global::unihx._internal.editor.HaxePropertiesData __temp_me40){
+		public static   void __hx_ctor_unihx__internal_editor_HaxePropertiesData(global::unihx._internal.editor.HaxePropertiesData __temp_me41){
 			unchecked {
 				#line 209 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
 				{
@@ -1189,21 +1189,21 @@ namespace unihx._internal.editor{
 					}
 					
 				}
-				catch (global::System.Exception __temp_catchallException60){
+				catch (global::System.Exception __temp_catchallException65){
 					#line 170 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-					global::haxe.lang.Exceptions.exception = __temp_catchallException60;
+					global::haxe.lang.Exceptions.exception = __temp_catchallException65;
 					#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-					object __temp_catchall61 = __temp_catchallException60;
+					object __temp_catchall66 = __temp_catchallException65;
 					#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-					if (( __temp_catchall61 is global::haxe.lang.HaxeException )) {
+					if (( __temp_catchall66 is global::haxe.lang.HaxeException )) {
 						#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-						__temp_catchall61 = ((global::haxe.lang.HaxeException) (__temp_catchallException60) ).obj;
+						__temp_catchall66 = ((global::haxe.lang.HaxeException) (__temp_catchallException65) ).obj;
 					}
 					
 					#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-					if (( __temp_catchall61 is global::haxe.io.Eof )) {
+					if (( __temp_catchall66 is global::haxe.io.Eof )) {
 						#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall61) );
+						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall66) );
 						#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
 						{
 							#line 196 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
@@ -1258,7 +1258,7 @@ namespace unihx._internal.editor{
 				#line 79 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
 				global::UnityEditor.EditorGUILayout.LabelField(((global::UnityEngine.GUIContent) (new global::UnityEngine.GUIContent(((string) ("Extra parameters") ), ((string) ("Extra Haxe parameters from build.hxml") ))) ), ((global::UnityEngine.GUILayoutOption[]) (default(global::UnityEngine.GUILayoutOption[])) ));
 				#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-				global::UnityEngine.GUILayoutOption[] __temp_stmt62 = default(global::UnityEngine.GUILayoutOption[]);
+				global::UnityEngine.GUILayoutOption[] __temp_stmt67 = default(global::UnityEngine.GUILayoutOption[]);
 				#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
 				{
 					#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
@@ -1266,11 +1266,11 @@ namespace unihx._internal.editor{
 					#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
 					opts[0] = global::UnityEngine.GUILayout.MinHeight(((float) (200.0) ));
 					#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-					__temp_stmt62 = opts;
+					__temp_stmt67 = opts;
 				}
 				
 				#line 85 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\HaxeProperties.hx"
-				this.extraParams = global::UnityEditor.EditorGUILayout.TextArea(((string) (this.extraParams) ), ((global::UnityEngine.GUILayoutOption[]) (__temp_stmt62) ));
+				this.extraParams = global::UnityEditor.EditorGUILayout.TextArea(((string) (this.extraParams) ), ((global::UnityEngine.GUILayoutOption[]) (__temp_stmt67) ));
 			}
 			#line default
 		}

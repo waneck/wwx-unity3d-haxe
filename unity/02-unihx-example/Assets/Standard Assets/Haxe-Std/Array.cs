@@ -91,11 +91,11 @@ public sealed class Array<T> : global::haxe.lang.HxObject, global::Array {
 			#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
 			{
 				#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-				object __temp_iterator41 = global::Reflect.fields(this).iterator();
+				object __temp_iterator42 = global::Reflect.fields(this).iterator();
 				#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-				while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(__temp_iterator41, "hasNext", 407283053, default(global::Array)))){
+				while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(__temp_iterator42, "hasNext", 407283053, default(global::Array)))){
 					#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-					string field = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(__temp_iterator41, "next", 1224901875, default(global::Array)));
+					string field = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(__temp_iterator42, "next", 1224901875, default(global::Array)));
 					#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
 					switch (field){
 						case "__a":
@@ -1556,11 +1556,11 @@ namespace _Array{
 				#line 461 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
 				{
 					#line 461 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-					object __temp_iterator42 = global::Reflect.fields(this).iterator();
+					object __temp_iterator43 = global::Reflect.fields(this).iterator();
 					#line 461 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-					while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(__temp_iterator42, "hasNext", 407283053, default(global::Array)))){
+					while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(__temp_iterator43, "hasNext", 407283053, default(global::Array)))){
 						#line 461 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
-						string field = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(__temp_iterator42, "next", 1224901875, default(global::Array)));
+						string field = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(__temp_iterator43, "next", 1224901875, default(global::Array)));
 						#line 461 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\Array.hx"
 						switch (field){
 							default:

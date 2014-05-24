@@ -22,7 +22,7 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_Output(global::haxe.io.Output __temp_me22){
+		public static   void __hx_ctor_haxe_io_Output(global::haxe.io.Output __temp_me23){
 			unchecked {
 				#line 30 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Output.hx"
 				{

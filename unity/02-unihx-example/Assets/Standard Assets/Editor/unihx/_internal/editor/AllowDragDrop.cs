@@ -48,17 +48,17 @@ public  class AllowDragDrop : global::UnityEditor.Editor {
 					case 9:
 					{
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						bool __temp_stmt49 = default(bool);
+						bool __temp_stmt54 = default(bool);
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 						{
 							#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							string s = global::UnityEditor.AssetDatabase.GetAssetPath(((global::UnityEngine.Object) (global::UnityEditor.DragAndDrop.objectReferences[0]) ));
 							#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-							__temp_stmt49 = s.EndsWith(".hx");
+							__temp_stmt54 = s.EndsWith(".hx");
 						}
 						
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						if (__temp_stmt49) {
+						if (__temp_stmt54) {
 							#line 33 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							global::UnityEditor.DragAndDrop.visualMode = ((global::UnityEditor.DragAndDropVisualMode) (global::UnityEditor.DragAndDropVisualMode.Link) );
 							global::UnityEngine.Event.current.Use();
@@ -76,17 +76,17 @@ public  class AllowDragDrop : global::UnityEditor.Editor {
 					case 11:
 					{
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						bool __temp_stmt50 = default(bool);
+						bool __temp_stmt55 = default(bool);
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 						{
 							#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							string s = global::UnityEditor.AssetDatabase.GetAssetPath(((global::UnityEngine.Object) (global::UnityEditor.DragAndDrop.objectReferences[0]) ));
 							#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-							__temp_stmt50 = s.EndsWith(".hx");
+							__temp_stmt55 = s.EndsWith(".hx");
 						}
 						
 						#line 32 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						if (__temp_stmt50) {
+						if (__temp_stmt55) {
 							#line 33 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							global::UnityEditor.DragAndDrop.visualMode = ((global::UnityEditor.DragAndDropVisualMode) (global::UnityEditor.DragAndDropVisualMode.Link) );
 							global::UnityEngine.Event.current.Use();
@@ -104,17 +104,17 @@ public  class AllowDragDrop : global::UnityEditor.Editor {
 					case 10:
 					{
 						#line 35 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						bool __temp_stmt51 = default(bool);
+						bool __temp_stmt56 = default(bool);
 						#line 35 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 						{
 							#line 35 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							string s1 = global::UnityEditor.AssetDatabase.GetAssetPath(((global::UnityEngine.Object) (global::UnityEditor.DragAndDrop.objectReferences[0]) ));
 							#line 35 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-							__temp_stmt51 = s1.EndsWith(".hx");
+							__temp_stmt56 = s1.EndsWith(".hx");
 						}
 						
 						#line 35 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
-						if (__temp_stmt51) {
+						if (__temp_stmt56) {
 							#line 36 "Z:\\var\\dev\\proj\\unihx\\unihx\\_internal\\editor\\AllowDragDrop.hx"
 							global::UnityEditor.DragAndDrop.visualMode = ((global::UnityEditor.DragAndDropVisualMode) (global::UnityEditor.DragAndDropVisualMode.Link) );
 							global::UnityEditor.DragAndDrop.AcceptDrag();

@@ -18,10 +18,10 @@ namespace sys.io{
 		}
 		
 		
-		public static   void __hx_ctor_sys_io_FileOutput(global::sys.io.FileOutput __temp_me34, global::System.IO.FileStream stream){
+		public static   void __hx_ctor_sys_io_FileOutput(global::sys.io.FileOutput __temp_me35, global::System.IO.FileStream stream){
 			unchecked {
 				#line 27 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\FileOutput.hx"
-				global::cs.io.NativeOutput.__hx_ctor_cs_io_NativeOutput(__temp_me34, stream);
+				global::cs.io.NativeOutput.__hx_ctor_cs_io_NativeOutput(__temp_me35, stream);
 			}
 			#line default
 		}

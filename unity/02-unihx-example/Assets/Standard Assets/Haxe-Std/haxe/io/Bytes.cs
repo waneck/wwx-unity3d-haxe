@@ -22,11 +22,11 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_Bytes(global::haxe.io.Bytes __temp_me25, int length, byte[] b){
+		public static   void __hx_ctor_haxe_io_Bytes(global::haxe.io.Bytes __temp_me26, int length, byte[] b){
 			unchecked {
 				#line 34 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Bytes.hx"
-				__temp_me25.length = length;
-				__temp_me25.b = b;
+				__temp_me26.length = length;
+				__temp_me26.b = b;
 			}
 			#line default
 		}

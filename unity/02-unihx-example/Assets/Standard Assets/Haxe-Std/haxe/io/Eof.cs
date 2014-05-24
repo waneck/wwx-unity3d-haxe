@@ -22,7 +22,7 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_Eof(global::haxe.io.Eof __temp_me27){
+		public static   void __hx_ctor_haxe_io_Eof(global::haxe.io.Eof __temp_me28){
 			unchecked {
 				#line 28 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Eof.hx"
 				{

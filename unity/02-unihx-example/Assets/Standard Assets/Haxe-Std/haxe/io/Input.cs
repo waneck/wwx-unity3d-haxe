@@ -22,7 +22,7 @@ namespace haxe.io{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_io_Input(global::haxe.io.Input __temp_me20){
+		public static   void __hx_ctor_haxe_io_Input(global::haxe.io.Input __temp_me21){
 			unchecked {
 				#line 28 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
 				{
@@ -123,21 +123,21 @@ namespace haxe.io{
 					}
 					
 				}
-				catch (global::System.Exception __temp_catchallException45){
+				catch (global::System.Exception __temp_catchallException50){
 					#line 88 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					global::haxe.lang.Exceptions.exception = __temp_catchallException45;
+					global::haxe.lang.Exceptions.exception = __temp_catchallException50;
 					#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					object __temp_catchall46 = __temp_catchallException45;
+					object __temp_catchall51 = __temp_catchallException50;
 					#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					if (( __temp_catchall46 is global::haxe.lang.HaxeException )) {
+					if (( __temp_catchall51 is global::haxe.lang.HaxeException )) {
 						#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-						__temp_catchall46 = ((global::haxe.lang.HaxeException) (__temp_catchallException45) ).obj;
+						__temp_catchall51 = ((global::haxe.lang.HaxeException) (__temp_catchallException50) ).obj;
 					}
 					
 					#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					if (( __temp_catchall46 is global::haxe.io.Eof )) {
+					if (( __temp_catchall51 is global::haxe.io.Eof )) {
 						#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall46) );
+						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall51) );
 						#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
 						{
 							#line 94 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
@@ -183,21 +183,21 @@ namespace haxe.io{
 					}
 					
 				}
-				catch (global::System.Exception __temp_catchallException47){
+				catch (global::System.Exception __temp_catchallException52){
 					#line 131 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					global::haxe.lang.Exceptions.exception = __temp_catchallException47;
+					global::haxe.lang.Exceptions.exception = __temp_catchallException52;
 					#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					object __temp_catchall48 = __temp_catchallException47;
+					object __temp_catchall53 = __temp_catchallException52;
 					#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					if (( __temp_catchall48 is global::haxe.lang.HaxeException )) {
+					if (( __temp_catchall53 is global::haxe.lang.HaxeException )) {
 						#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-						__temp_catchall48 = ((global::haxe.lang.HaxeException) (__temp_catchallException47) ).obj;
+						__temp_catchall53 = ((global::haxe.lang.HaxeException) (__temp_catchallException52) ).obj;
 					}
 					
 					#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-					if (( __temp_catchall48 is global::haxe.io.Eof )) {
+					if (( __temp_catchall53 is global::haxe.io.Eof )) {
 						#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
-						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall48) );
+						global::haxe.io.Eof e = ((global::haxe.io.Eof) (__temp_catchall53) );
 						#line 136 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"
 						{
 							#line 137 "C:\\HaxeToolkit\\haxe\\std\\haxe\\io\\Input.hx"

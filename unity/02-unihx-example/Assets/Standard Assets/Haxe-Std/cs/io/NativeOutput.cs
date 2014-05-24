@@ -18,10 +18,10 @@ namespace cs.io{
 		}
 		
 		
-		public static   void __hx_ctor_cs_io_NativeOutput(global::cs.io.NativeOutput __temp_me23, global::System.IO.Stream stream){
+		public static   void __hx_ctor_cs_io_NativeOutput(global::cs.io.NativeOutput __temp_me24, global::System.IO.Stream stream){
 			unchecked {
 				#line 33 "C:\\HaxeToolkit\\haxe\\std\\cs\\io\\NativeOutput.hx"
-				__temp_me23.stream = stream;
+				__temp_me24.stream = stream;
 				if ( ! (stream.CanWrite) ) {
 					#line 34 "C:\\HaxeToolkit\\haxe\\std\\cs\\io\\NativeOutput.hx"
 					throw global::haxe.lang.HaxeException.wrap("Read-only stream");

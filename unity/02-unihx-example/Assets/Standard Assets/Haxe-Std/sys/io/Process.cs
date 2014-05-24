@@ -22,11 +22,11 @@ namespace sys.io{
 		}
 		
 		
-		public static   void __hx_ctor_sys_io_Process(global::sys.io.Process __temp_me35, string cmd, global::Array<object> args){
+		public static   void __hx_ctor_sys_io_Process(global::sys.io.Process __temp_me36, string cmd, global::Array<object> args){
 			unchecked {
 				#line 39 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\Process.hx"
-				__temp_me35.native = new global::System.Diagnostics.Process();
-				__temp_me35.native.StartInfo.FileName = cmd;
+				__temp_me36.native = new global::System.Diagnostics.Process();
+				__temp_me36.native.StartInfo.FileName = cmd;
 				global::StringBuf buf = new global::StringBuf();
 				{
 					#line 42 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\Process.hx"
@@ -53,15 +53,15 @@ namespace sys.io{
 				}
 				
 				#line 48 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\Process.hx"
-				__temp_me35.native.StartInfo.Arguments = buf.toString();
-				__temp_me35.native.StartInfo.RedirectStandardError = __temp_me35.native.StartInfo.RedirectStandardInput = __temp_me35.native.StartInfo.RedirectStandardOutput = true;
-				__temp_me35.native.StartInfo.UseShellExecute = false;
+				__temp_me36.native.StartInfo.Arguments = buf.toString();
+				__temp_me36.native.StartInfo.RedirectStandardError = __temp_me36.native.StartInfo.RedirectStandardInput = __temp_me36.native.StartInfo.RedirectStandardOutput = true;
+				__temp_me36.native.StartInfo.UseShellExecute = false;
 				#line 52 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\Process.hx"
-				__temp_me35.native.Start();
+				__temp_me36.native.Start();
 				#line 54 "C:\\HaxeToolkit\\haxe\\std\\cs\\_std\\sys\\io\\Process.hx"
-				__temp_me35.stdout = new global::cs.io.NativeInput(((global::System.IO.Stream) (__temp_me35.native.StandardOutput.BaseStream) ));
-				__temp_me35.stderr = new global::cs.io.NativeInput(((global::System.IO.Stream) (__temp_me35.native.StandardError.BaseStream) ));
-				__temp_me35.stdin = new global::cs.io.NativeOutput(((global::System.IO.Stream) (__temp_me35.native.StandardInput.BaseStream) ));
+				__temp_me36.stdout = new global::cs.io.NativeInput(((global::System.IO.Stream) (__temp_me36.native.StandardOutput.BaseStream) ));
+				__temp_me36.stderr = new global::cs.io.NativeInput(((global::System.IO.Stream) (__temp_me36.native.StandardError.BaseStream) ));
+				__temp_me36.stdin = new global::cs.io.NativeOutput(((global::System.IO.Stream) (__temp_me36.native.StandardInput.BaseStream) ));
 			}
 			#line default
 		}

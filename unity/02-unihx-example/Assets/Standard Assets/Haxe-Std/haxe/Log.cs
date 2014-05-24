@@ -26,7 +26,7 @@ namespace haxe{
 		}
 		
 		
-		public static   void __hx_ctor_haxe_Log(global::haxe.Log __temp_me24){
+		public static   void __hx_ctor_haxe_Log(global::haxe.Log __temp_me25){
 			unchecked {
 				#line 28 "Z:\\var\\dev\\proj\\unihx\\haxe\\Log.hx"
 				{
