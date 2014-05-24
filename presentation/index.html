@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Having fun with Haxe and Unity3D</title>
+		<title>Unity3D on steroids with Haxe</title>
 
 		<meta name="description" content="Getting started with Haxe and Unity3D">
 		<meta name="author" content="Cauê Waneck">
@@ -55,9 +55,9 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-background="extras/dukenukem.jpg">
 					<h1>Unity3D on steroids</h1>
-					<h3>Having fun with Unity3D and Haxe</h3>
+					<h3>Adding Unity to your supersonic Haxe toolbox</h3>
 					<p>
 						<small>Created by <a href="http://github.com/waneck">Cauê Waneck</a> / <a href="http://twitter.com/cwaneck">@cwaneck</a></small>
 					</p>
@@ -72,6 +72,7 @@
 					<li>Asset store</li>
 					<li class="fragment"><span class="fragment">Because </span><h4 style="font-size: 1.5em;display: inline;" class="fragment">WE <span class="fragment">CAN</span></h4></li> 
 						<!-- you may need to use Unity in some project, and one of the biggest advantages of Haxe is being able to choose the best tool for the job -->
+						<!-- actually the best question would be: why wouldn't you? -->
 				</ul>
 					<aside class="notes">
 					</aside>
@@ -81,10 +82,12 @@
 					<section>
 					<h2>Why Haxe?</h2>
 					<ul>
+						<li class="fragment">Very little change in workflow</li>
 						<li class="fragment">Unity as a target: Natively target even more platforms</li>
 						<li class="fragment">Awesome open-source community</li> <!-- vs asset store -->
-						<li class="fragment">Future-safe code base</li>
+						<li class="fragment">Future-proof code base</li>
 						<li class="fragment">Documentation?</li>
+						<li class="fragment">Don't fight, assimilate</li>
 						<div class="fragment">
 						<li>Elegant and feature-rich language</li>
 						<ul>
@@ -93,7 +96,6 @@
 						</ul>
 						</div>
 						<li class="fragment">Did I mention... <span class="fragment">macros ?</span></li>
-						<li class="fragment"></li>
 					</ul>
 					</section>
 					<section>
@@ -134,6 +136,7 @@
 						<h3>Example</h3>
 					</section>
 					<section data-markdown>
+						### Example
 						```bash
 						 -net-lib ../libs/UnityEngine.dll
 						 -net-lib ../libs/UnityEditor.dll
@@ -182,12 +185,29 @@
 							//C#
 							EditorApplication.update += delegate() { Debug.Log("update"); };
 							void Update() {}
+							SomeComponent comp = GetComponent&lt;SomeComponent&gt;();
 
 							//Haxe
 							EditorApplication.update += function() Debug.Log('update');
 							function Update() {}
+							var comp:SomeComponent = GetComponent(); //or var comp = (GetComponent() : SomeComponent)
 						</code></pre>
 					</section>
+				</section>
+				<section>
+					<h2>Steroids</h2>
+					<img src="extras/steroids.jpg" />
+				</section>
+				<section>
+					<h3>WIP: unihx</h3>
+						<!-- please consider this a WIP and more like a collection of ideas for now -->
+						<pre class="fragment"><code class="bash hljs php">
+							$ haxelib run unihx init .
+						</code></pre>
+						<div class="fragment">That's all you have to do. <span class="fragment">Really.</span></div>
+				</section>
+				<section>
+					<h3>unihx features</h3>
 				</section>
 				<section>
 					<section>
@@ -500,8 +520,8 @@ function linkify( selector ) {
 				transition: 'zoom', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundImage: 'extras/pano2.jpg',
+				parallaxBackgroundSize: '4784px 720px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
