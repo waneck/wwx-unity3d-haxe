@@ -14,9 +14,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
-		<!-- <link rel="stylesheet" href="css/theme/blood.css" id="theme"> -->
-		<link rel="stylesheet" href="revealjs/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="revealjs/css/reveal.css">
+		<link rel="stylesheet" href="revealjs/css/theme/blood.css" id="theme">
+		<!-- <link rel="stylesheet" href="revealjs/css/theme/beige.css" id="theme"> -->
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
@@ -31,6 +31,18 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
+		<style>
+.reveal pre.compare {
+	font-size: 0.45em;
+	padding: 0;
+	margin: 0;
+}
+.reveal pre.compare {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+		</style>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -44,7 +56,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1> Unity3D and Haxe </h1>
+					<h1>Unity3D on steroids</h1>
 					<h3>Having fun with Unity3D and Haxe</h3>
 					<p>
 						<small>Created by <a href="http://github.com/waneck">Cauê Waneck</a> / <a href="http://twitter.com/cwaneck">@cwaneck</a></small>
@@ -52,22 +64,131 @@
 				</section>
 
 				<section>
-				<!-- <section data&#45;markdown> -->
-				<div data-markdown>
-					# Testing
-				</div>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
+				<h2>Why Unity3D?</h2>
+				<ul>
+					<li>Most popular tool for 3D games</li>
+					<li>Multiple targets: web-based using a plugin</li>
+					<li>Flash "refugees"</li>
+					<li>Asset store</li>
+					<li class="fragment"><span class="fragment">Because </span><h4 style="font-size: 1.5em;display: inline;" class="fragment">WE <span class="fragment">CAN</span></h4></li> 
+						<!-- you may need to use Unity in some project, and one of the biggest advantages of Haxe is being able to choose the best tool for the job -->
+				</ul>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+					<h2>Why Haxe?</h2>
+					<ul>
+						<li class="fragment">Unity as a target: Natively target even more platforms</li>
+						<li class="fragment">Awesome open-source community</li> <!-- vs asset store -->
+						<li class="fragment">Future-safe code base</li>
+						<li class="fragment">Documentation?</li>
+						<div class="fragment">
+						<li>Elegant and feature-rich language</li>
+						<ul>
+							<li>Functional and imperative programming</li>
+							<li>Pattern matching, array comprehensions, ADTs and so much more</li>
+						</ul>
+						</div>
+						<li class="fragment">Did I mention... <span class="fragment">macros ?</span></li>
+						<li class="fragment"></li>
+					</ul>
+					</section>
+					<section>
+						<h2>Why Haxe? (tl;dr)</h2>
+						<img src="extras/use-haxe.jpg" width="319" height="315" alt="Use HAXE" />
+					</section>
+				</section>
+
+				<section>
+					<h2>Getting started with Unity/Haxe</h2>
+				</section>
+				<section>
+					<h3>How it was</h3>
+					<img src="extras/how-it-was.png" width="754" height="564" alt="How it was" />
+				</section>
+				<section>
+					<section>
+						<h3>Now</h3>
+						<div data-markdown class="fragment">
+						```bash
+						$ haxe -net-lib libs/UnityEngine.dll -net-lib libs/UnityEditor.dll
+
+						```
+					</div>
+					</section>
+					<section>
+						<h3>net-lib</h3>
+						<ul>
+							<li class="fragment">Haxe/C#'s counterpart of -java-lib and -swf-lib</li>
+							<li class="fragment">No need to create externs</li>
+							<li class="fragment">Do pratically anything you can do with pure C# code</li>
+							<li class="fragment">Properties, events, delegates, ...</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Example</h3>
+					</section>
+					<section data-markdown>
+						```bash
+						 -net-lib ../libs/UnityEngine.dll
+						 -net-lib ../libs/UnityEditor.dll
+						 #let the Unity IDE do the C# compilation
+						 -D no-compilation
+						 -cs haxe_bin
+						 ExampleScript
+						 ```
+						 ```haxe
+						 import cs.NativeArray;
+						 import unityengine.*;
+
+						 class ExampleScript extends unityengine.MonoBehaviour
+						 {
+								public var stringProp:String;
+								public var arrayProp:NativeArray&lt;Int&gt;;
+								public var vectorProp:Vector3;
+
+								function Update()
+								{
+									Debug.Log("I'm working!");
+								}
+						 }
+						 ```
+					</section>
+					<section data-markdown>
+						 [![screenshot](extras/how-to-1.png)](extras/how-to-1.png)
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Equivalence</h3>
+					</section>
+					<section data-markdown>
+						#### Types
+
+						|  C#           |  Haxe
+						|---------------|-----------------------------
+						| SomeType[]    | `NativeArray&lt;SomeType&gt;` 
+						| UnityEngine.SomeType | unityengine.SomeType
+						| using UnityEngine | import unityengine.*
+					</section>
+					<section>
+						<h4>Code</h4>
+						<pre class="compare"><code class="cs haxe hljs php">
+							//C#
+							EditorApplication.update += delegate() { Debug.Log("update"); };
+							void Update() {}
+
+							//Haxe
+							EditorApplication.update += function() Debug.Log('update');
+							function Update() {}
+						</code></pre>
+					</section>
+				</section>
 				<section>
 					<section>
 						<h2>Vertical Slides</h2>
@@ -363,7 +484,7 @@ function linkify( selector ) {
 		</div>
 
 		<script src="revealjs/lib/js/head.min.js"></script>
-		<script src="revealjs/js/reveal.min.js"></script>
+		<script src="revealjs/js/reveal.js"></script>
 
 		<script>
 
@@ -376,11 +497,11 @@ function linkify( selector ) {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'zoom', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [

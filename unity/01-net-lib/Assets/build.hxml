@@ -1,0 +1,8 @@
+-cp haxe_src
+-net-lib ../libs/UnityEngine.dll
+-net-lib ../libs/UnityEditor.dll
+#let the Unity IDE do the C# compilation
+-D no-compilation
+-cs haxe_bin
+ExampleScript
+
