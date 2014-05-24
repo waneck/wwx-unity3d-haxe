@@ -1,0 +1,4 @@
+classpaths.hxml
+-lib unihx
+-cs hx-compiled
+-D unity_std_target=Standard Assets

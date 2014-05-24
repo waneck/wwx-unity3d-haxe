@@ -1,0 +1,5 @@
+# Add your own compiler parameters here
+
+params.hxml
+#--connect 45085
+
