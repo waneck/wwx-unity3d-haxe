@@ -130,6 +130,49 @@
 							<li class="fragment">Properties, events, delegates, ...</li>
 						</ul>
 					</section>
+					<section data-markdown>
+						```haxe
+						@:meta(System.SomeAttribute(1,2,3))
+						class HaxeClass extends CsClass implements CsInterface
+						{
+							@:overload override function get_SomeProperty():Int
+							{
+								trace("I'm overriding a C# getter!");
+								return super.get_SomeProperty();
+							}
+
+							@:overload public function implementedInterfaceFunction(a:String):Void
+							{
+								some.native.Type.Type_InnerClass.doSomething(a);
+								callDelegate(function() trace(a));
+								this.add_someEvent(function() trace(a));
+							}
+
+							@:unsafe function unsafeCode()
+							{
+								var arr = new cs.NativeArray<Int>(10);
+								cs.Lib.fixed({
+									var p = cs.Lib.pointerOfArray(x);
+									for (i in 0...10)
+									{
+										p[0] = i;
+										p = p.add(1);
+									}
+								});
+							}
+							
+							@:overload function callDelegate(act:cs.system.Action):Void
+							{
+								act.Invoke();
+							}
+
+							@:overload function callDelegate<T>(act.cs.system.Func<T>):Void
+							{
+								act.Invoke();
+							}
+						}
+						```
+					</section>
 				</section>
 				<section>
 					<section data-markdown>
@@ -315,6 +358,10 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 						<img src="extras/enums-4.png" />
 					</section>
 				</section>
+
+				<!-- <section> -->
+				<!-- 	<h2>Excess</h2> -->
+				<!-- </section> -->
 
 				<section>
 					<h2>Call for collaboration!</h2>
