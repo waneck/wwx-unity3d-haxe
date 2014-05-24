@@ -132,9 +132,6 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						<h3>Example</h3>
-					</section>
 					<section data-markdown>
 						### Example
 						```bash
@@ -168,9 +165,46 @@
 				</section>
 				<section>
 					<section>
-						<h3>Equivalence</h3>
+					<h3>Generated code</h3>
+
+						<pre><code class="cs haxe hljs php">
+import cs.NativeArray;
+import unityengine.*;
+
+@:nativeGen class ExampleScript extends unityengine.MonoBehaviour
+{
+	public var stringProp:String;
+	public var arrayProp:NativeArray&lt;Int&gt;;
+	public var vectorProp:Vector3;
+
+	function Update()
+	{
+		Debug.Log("I'm working!");
+	}
+}
+						</code></pre>
 					</section>
+					<section>
+						<h3>Generated code</h3>
+						<pre><code class="cs haxe hljs php">
+#pragma warning disable 109, 114, 219, 429, 168, 162
+public class ExampleScript : global::UnityEngine.MonoBehaviour {
+	public ExampleScript() : base() {
+	}
+
+	public string stringProp;
+	public int[] arrayProp;
+	public global::UnityEngine.Vector3 vectorProp;
+	public virtual void Update() {
+		global::UnityEngine.Debug.Log(((object) ("I\'m working!") ));
+	}
+}
+						</code></pre>
+					</section>
+				</section>
+				<section>
 					<section data-markdown>
+						### Equivalence
 						#### Types
 
 						|  C#           |  Haxe
@@ -180,6 +214,7 @@
 						| using UnityEngine | import unityengine.*
 					</section>
 					<section>
+						<h3>Equivalence</h3>
 						<h4>Code</h4>
 						<pre class="compare"><code class="cs haxe hljs php">
 							//C#
@@ -200,45 +235,52 @@
 				</section>
 				<section>
 					<h3>WIP: unihx</h3>
-						<!-- please consider this a WIP and more like a collection of ideas for now -->
+						<!-- please consider this a WIP and more like a collection of ideas for now. Also, needs latest haxe -->
+						<div class="fragment">Goal: Unity powered by Haxe</div>
 						<pre class="fragment"><code class="bash hljs php">
-							$ haxelib run unihx init .
+							$ haxelib run unihx init path/to/dir
 						</code></pre>
-						<div class="fragment">That's all you have to do. <span class="fragment">Really.</span></div>
+						<div class="fragment">That's all you have to do.</div>
 				</section>
 				<section>
 					<h3>unihx features</h3>
+					<ul>
+						<li class="fragment">Automatic recompilation (using compilation server)</li>
+						<li class="fragment">Drag &amp; Drop support for Haxe classes</li>
+						<li class="fragment">Avoid the generated C# code warnings</li>
+						<li class="fragment"></li>
+					</ul>
 				</section>
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+				<!-- <section> -->
+				<!-- 	<section> -->
+				<!-- 		<h2>Vertical Slides</h2> -->
+				<!-- 		<p> -->
+				<!-- 			Slides can be nested inside of other slides, -->
+				<!-- 			try pressing <a href="#" class="navigate&#45;down">down</a>. -->
+				<!-- 		</p> -->
+				<!-- 		<a href="#" class="image navigate&#45;down"> -->
+				<!-- 			<img width="178" height="238" src="https://s3.amazonaws.com/hakim&#45;static/reveal&#45;js/arrow.png" alt="Down arrow"> -->
+				<!-- 		</a> -->
+				<!-- 	</section> -->
+				<!-- 	<section> -->
+				<!-- 		<h2>Basement Level 1</h2> -->
+				<!-- 		<p>Press down or up to navigate.</p> -->
+				<!-- 	</section> -->
+				<!-- 	<section> -->
+				<!-- 		<h2>Basement Level 2</h2> -->
+				<!-- 		<p>Cornify</p> -->
+				<!-- 		<a class="test" href="http://cornify.com"> -->
+				<!-- 			<img width="280" height="326" src="https://s3.amazonaws.com/hakim&#45;static/reveal&#45;js/cornify.gif" alt="Unicorn"> -->
+				<!-- 		</a> -->
+				<!-- 	</section> -->
+				<!-- 	<section> -->
+				<!-- 		<h2>Basement Level 3</h2> -->
+				<!-- 		<p>That's it, time to go back up.</p> -->
+				<!-- 		<a href="#/2" class="image"> -->
+				<!-- 			<img width="178" height="238" src="https://s3.amazonaws.com/hakim&#45;static/reveal&#45;js/arrow.png" alt="Up arrow" style="&#45;webkit&#45;transform: rotate(180deg);"> -->
+				<!-- 		</a> -->
+				<!-- 	</section> -->
+				<!-- </section> -->
 
 				<section>
 					<h2>Slides</h2>
@@ -461,12 +503,12 @@ function linkify( selector ) {
 					</section>
 				</section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+				<!-- <section> -->
+				<!-- 	<h2>Spectacular image!</h2> -->
+				<!-- 	<a class="image" href="http://lab.hakim.se/meny/" target="_blank"> -->
+				<!-- 		<img width="320" height="299" src="http://s3.amazonaws.com/hakim&#45;static/portfolio/images/meny.png" alt="Meny"> -->
+				<!-- 	</a> -->
+				<!-- </section> -->
 
 				<section>
 					<h2>Export to PDF</h2>
