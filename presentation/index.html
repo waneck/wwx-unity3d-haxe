@@ -127,7 +127,7 @@
 							<li class="fragment">Haxe/C#'s counterpart of -java-lib and -swf-lib</li>
 							<li class="fragment">No need to create externs</li>
 							<li class="fragment">Do pratically anything you can do with pure C# code</li>
-							<li class="fragment">Properties, events, delegates, ...</li>
+							<li class="fragment">Properties, events, delegates, overloaded functions ...</li>
 						</ul>
 					</section>
 					<section data-markdown>
@@ -152,7 +152,7 @@
 							{
 								var arr = new cs.NativeArray<Int>(10);
 								cs.Lib.fixed({
-									var p = cs.Lib.pointerOfArray(x);
+									var p:Pointer<Int> = cs.Lib.pointerOfArray(x);
 									for (i in 0...10)
 									{
 										p[0] = i;
@@ -326,6 +326,10 @@ public class ExampleScript : global::UnityEngine.MonoBehaviour {
 				<section>
 					<h2 style="display:none">HaxeBehaviour</h2>
 					<img src="extras/haxebehaviour.jpg" alt="HaxeBehaviour" />
+					<ul>
+						<li>Supports non-constant expressions on the initializer</li>
+						<li>Automatically sets @:nativeGen</li>
+					</ul>
 				</section>
 				<section>
 					<section>
