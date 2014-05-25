@@ -1,0 +1,6 @@
+import unityengine.*;
+
+function Update()
+{
+	trace("It's working!");
+}
