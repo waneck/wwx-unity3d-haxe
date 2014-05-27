@@ -4,6 +4,10 @@ import unihx.inspector.*;
 class Test extends HaxeBehaviour
 {
 	public var haxeEnum:WrappedValue;
+	public function Update()
+	{
+		this.
+	}
 }
 
 enum WrappedValue
